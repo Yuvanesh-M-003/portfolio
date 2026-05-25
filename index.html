@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuvanesh M — Engineer </title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- ✏️ EDITABLE: Replace with your preferred Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CUSTOM CURSOR
+  ============================================================ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- ✏️ EDITABLE: Your brand/name initials -->
+      <a href="#home" class="nav-logo">YUVAN<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Subtle background grid -->
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT: Profile Image -->
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <!-- ✏️ EDITABLE: Replace src with your actual photo URL -->
+          <img
+            src="images/myphoto.png"
+            alt="Yuvanesh M — Profile Photo"
+            class="hero-photo"
+            id="heroPhoto"
+          />
+          <!-- Decorative accent lines -->
+          <div class="frame-accent frame-accent--tl"></div>
+          <div class="frame-accent frame-accent--br"></div>
+        </div>
+        <!-- Floating badge -->
+        <div class="availability-badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+      </div>
+
+      <!-- RIGHT: Text Content -->
+      <div class="hero-content">
+        <!-- ✏️ EDITABLE: Your tagline label -->
+        <p class="hero-eyebrow">EEE Student | Aspiring Software Engineer</p>
+
+        <!-- ✏️ EDITABLE: Your full name -->
+        <h1 class="hero-name">
+          Yuvanesh<br />
+          <span class="name-accent">M</span>
+        </h1>
+
+        <!-- ✏️ EDITABLE: Your tagline / value prop -->
+        <p class="hero-tagline">
+          Calm mind. Sharp execution.
+          Built on discipline, not hype.
+          Turning complex problems into clean, decisive solutions.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn--primary">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        </div>
+
+        <!-- Stats row -->
+        <div class="hero-stats">
+          <!-- ✏️ EDITABLE: Your stats -->
+          <div class="stat">
+            <span class="stat-number">0+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Internships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About</div>
+      <div class="about-grid">
+        <div class="about-heading reveal">
+          <h2 class="section-title">Driven by curiosity.<br />Defined by execution.</h2>
+        </div>
+        <div class="about-body reveal">
+          <!-- ✏️ EDITABLE: Your about paragraph -->
+          <p>
+            Electrical and Electronics Engineering student transitioning into
+software development. Skilled in Java, full-stack development, and
+problem solving. Built web applications using React, Spring Boot, and
+PostgreSQL. Interested in applying data-driven and AI-based
+approaches to solve real-world problems while improving DSA skills.
+          </p>
+          <p>
+Focused on intelligent systems and practical innovation.
+Driven by consistency, deep thinking, and execution.          </p>
+          <a href="https://drive.google.com/file/d/1NRMQ_35drUC-fa7cQjX-ZJidSjmDzGxq/view?usp=drivesdk" class="inline-link">
+            Download Resume
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Work</div>
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- ✏️ EDITABLE: Project Card 1 -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-top">
+            <div class="project-number">01</div>
+            <div class="project-links">
+              <a href="https://my-first-webpage-1.onrender.com/" aria-label="Live site" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6M10 2h5v5M14.5 3.5 8 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://github.com/Yuvanesh-M-003/My-First-Webpage" aria-label="GitHub" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.396.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" stroke="currentColor" stroke-width="1.4"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">My Valentine - Interactive Web Application</h3>
+          <p class="project-desc">Built a responsive web application with dynamic UI components and personalized user interactions using React and JavaScript.
+Optimized frontend performance and deployed the application with scalable design principles.</p>
+          <div class="project-stack">
+            <span class="tag">React</span>
+            <span class="tag">Java SpringBoot</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- ✏️ EDITABLE: Project Card 2 -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-top">
+            <div class="project-number">02</div>
+            <div class="project-links">
+              <a href="#" aria-label="Live site" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6M10 2h5v5M14.5 3.5 8 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" aria-label="GitHub" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.396.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" stroke="currentColor" stroke-width="1.4"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">PathPointer — Intelligent Learning Platform</h3>
+          <p class="project-desc">Developed a full-stack learning platform using React, Spring Boot, and PostgreSQL with Google OAuth authentication.
+Implemented personalized problem recommendations and real-time progress tracking using data-driven logic.</p>
+          <div class="project-stack">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Neon</span>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- ✏️ EDITABLE: Project Card 3 -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-top">
+            <div class="project-number">03</div>
+            <div class="project-links">
+              <a href="#" aria-label="Live site" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6M10 2h5v5M14.5 3.5 8 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" aria-label="GitHub" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.396.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" stroke="currentColor" stroke-width="1.4"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Battery Management System with Active Cell Balancing</h3>
+          <p class="project-desc">Simulated active cell balancing for lithium-ion batteries using MATLAB/Simulink to reduce voltage imbalance.
+Analyzed battery performance and efficiency through intelligent balancing techniques and system modeling.</p>
+          <div class="project-stack">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Simulink</span>
+            <span class="tag">Battery Modeling</span>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- ✏️ EDITABLE: Project Card 4 -->
+        <div class="project-card reveal" data-tilt>
+          <div class="card-top">
+            <div class="project-number">04</div>
+            <div class="project-links">
+              <a href="#" aria-label="Live site" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6M10 2h5v5M14.5 3.5 8 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" aria-label="GitHub" class="card-icon-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.396.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" stroke="currentColor" stroke-width="1.4"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">IoT-Based Smart Environment Control System</h3>
+          <p class="project-desc">Developed an Arduino-based automation system for temperature-controlled fan speed and PIR-based lighting control.
+Integrated Bluetooth communication and PWM-based control for efficient and adaptive operation.</p>
+          <div class="project-stack">
+            <span class="tag">Arduino</span>
+            <span class="tag">Embedded C</span>
+            <span class="tag">Bluetooth</span>
+            <span class="tag">PWM Control</span>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-title reveal">Skills</h2>
+
+      <div class="skills-grid">
+
+        <!-- ✏️ EDITABLE: Skill categories -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 4l-4 6 4 6M14 4l4 6-4 6M12 3l-4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="11" y="3" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="11" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">SpringBoot</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2z" stroke="currentColor" stroke-width="1.5"/><path d="M2 10h16M10 2c-2.5 3-2.5 11 0 16M10 2c2.5 3 2.5 11 0 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>EEE Core</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Simulink</span>
+            <span class="skill-tag">PCB Design</span>
+            <span class="skill-tag">Sensor Integration</span>
+            <span class="skill-tag">Circuit Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><ellipse cx="10" cy="7" rx="7" ry="3" stroke="currentColor" stroke-width="1.5"/><path d="M3 7v6c0 1.657 3.134 3 7 3s7-1.343 7-3V7" stroke="currentColor" stroke-width="1.5"/><path d="M3 10c0 1.657 3.134 3 7 3s7-1.343 7-3" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Others</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Let's build<br />something great.</h2>
+          <p class="contact-sub">I'm selective about what I work on. If you have something worth building, I'd like to hear about it.</p>
+          <!-- ✏️ EDITABLE: Your email -->
+<a href="mailto:yuvaneshm00@gmail.com" class="contact-email">
+  yuvaneshm00@gmail.com
+</a>       </div>
+        <div class="contact-right reveal">
+          <!-- ✏️ EDITABLE: Contact form — hook up to Formspree or EmailJS -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <!-- ✏️ EDITABLE: Your name/brand -->
+          <span class="footer-logo">Yuvanesh M<span class="logo-dot">.</span></span>
+          <p class="footer-copy">© 2025. Crafted with intention.</p>
+        </div>
+        <div class="footer-socials">
+          <!-- ✏️ EDITABLE: Your social links -->
+          <a href="https://github.com/Yuvanesh-M-003" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.396.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" stroke="currentColor" stroke-width="1.4"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yuvanesh-m-14625b30a" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.4"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
