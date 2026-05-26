@@ -464,7 +464,9 @@ input, textarea { font: inherit; }
   align-items: center;
   gap: 28px;
 }
-.stat { display: flex; flex-direction: column; }
+.stat {
+  min-width: fit-content;
+}
 .stat-number {
   font-family: var(--font-display);
   font-size: 1.6rem;
@@ -939,7 +941,12 @@ input, textarea { font: inherit; }
   .hero-tagline { font-size: 0.95rem; }
   .hero-cta { gap: 10px; }
   .btn { padding: 11px 22px; font-size: 0.88rem; }
-  .hero-stats { gap: 18px; }
+  .hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: nowrap;
+}
   .stat-number { font-size: 1.35rem; }
 
   .section { padding: 80px 0; }
@@ -966,4 +973,80 @@ input, textarea { font: inherit; }
   .hero { padding: calc(var(--nav-h) + 30px) 16px 90px; }
   .hero-cta { flex-direction: column; align-items: flex-start; }
   .hero-cta .btn { width: 100%; justify-content: center; }
+}
+
+.contact-info-card {
+  margin-top: 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 140, 0, 0.16),
+      rgba(255, 170, 0, 0.08)
+    );
+
+  border: 1px solid rgba(255, 180, 80, 0.18);
+
+  padding: 24px;
+  border-radius: 20px;
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 0 18px rgba(255, 140, 0, 0.18),
+    0 0 45px rgba(255, 140, 0, 0.10),
+    inset 0 1px 1px rgba(255,255,255,0.08);
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.35s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 0 25px rgba(255, 140, 0, 0.28),
+    0 0 60px rgba(255, 160, 0, 0.18),
+    inset 0 1px 1px rgba(255,255,255,0.10);
+}
+
+.contact-info-card::before {
+  content: "";
+
+  position: absolute;
+  top: -50%;
+  left: -50%;
+
+  width: 200%;
+  height: 200%;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,0.06),
+      transparent
+    );
+
+  transform: rotate(25deg);
+
+  pointer-events: none;
+}
+
+.contact-right {
+  margin-left: 40px;
+}
+
+.info-title {
+  font-size: 1.35rem;
+  margin-bottom: 24px;
+
+  color: #ffb347;
+
+  font-weight: 700;
+
+  text-shadow:
+    0 0 10px rgba(255, 170, 0, 0.35);
 }
